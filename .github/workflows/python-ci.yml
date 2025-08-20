@@ -58,7 +58,8 @@ jobs:
             # Install/update dependencies
             pip3 install --user -r requirements.txt
 
-            
-            
+            PID=$(pgrep -f "python3 app.py") && kill $PID || true
+
+
             # Restart Flask app in background
             nohup python3 app.py > app.log 2>&1 &
