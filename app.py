@@ -6,5 +6,9 @@ app = Flask(__name__)
 def home():
     return "Hello Hello Hello4"
 
+@app.route("/testing2")
+def home2():
+    return "testing 2"
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080)

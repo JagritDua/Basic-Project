@@ -58,8 +58,6 @@ jobs:
             # Install/update dependencies
             pip3 install --user -r requirements.txt
 
-            # Stop existing Flask app (if running)
-            pkill -f "python3 app.py" || true
-
+            
             # Restart Flask app in background
             nohup python3 app.py > app.log 2>&1 &
