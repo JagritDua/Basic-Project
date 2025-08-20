@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "Hello Hello Hello4"
+    return "testing after removing kill"
 
 @app.route("/testing2")
 def home2():
