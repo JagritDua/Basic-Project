@@ -8,7 +8,7 @@ class FlaskTest(unittest.TestCase):
     def test_home(self):
         response = self.app.get('/')
         self.assertEqual(response.status_code, 200)
-        self.assertIn(b'Hello Hello Hello', response.data)
+        self.assertIn(b'Hello Hello Hello2', response.data)
 
 if __name__ == "__main__":
     unittest.main()
